@@ -1,0 +1,79 @@
+#*********************************************************************************************************
+#this file is used to store key map table
+# custom_name:	  name of map table
+# custom_code:	  custom code for remote device
+# release_delay	  unit:ms.release will report from kernel to user layer after this period of time
+#			  from press or repeat triggered.
+###PARAS FOR MOUSE MODE:
+# fn_key_scancode: scancode of fn key which used to swith mode
+# cursor_left_scancode: scancode of left key
+# cursor_right_scancode:  scancode of right key
+# cursor_up_scancode: scancode of up key
+# cursor_down_scancode: scancode of down key
+# cursor_ok_scancode: scancode of ok key   
+#************************************************************************************************************* 
+custom_name = nec-test
+custom_code = 0xfe01
+release_delay = 80
+
+fn_key_scancode = 0x00
+cursor_left_scancode = 0x51
+cursor_right_scancode = 0x50
+cursor_up_scancode = 0x16
+cursor_down_scancode = 0x1a
+cursor_ok_scancode = 0x13
+
+		
+key_begin       
+		0x11 102 #HOME
+		0x19 158 #EXIT
+		0x4c 125 #MENU
+		0x40 116 #ON/OFF
+		0x18 115 #VOL+
+		0x10 114 #VOL-
+		0x16 103 #UP
+		0x51 105 #LEFT
+		0x13 97  #DPAD_CENTER
+		0x50 106 #RIGHT
+		0x1a 108 #DOWN
+		0x41 113 #MUTE
+	  	0x5a 119 #PLAY_PAUSE
+		0x52 124 #MEDIA_PAUSE 
+		0x0a 257 #MUSIC
+#	  	0x49 261 #PICTURE PLAYER
+	  	0x4d 263 #SHORTCUT_VIDEOPLAYER
+#	  	0x48 262 #SHORTCUT_FILEBROWSER
+	  	0x03 217 #SEARCH
+	  	0x0e 70  #267->WEBSITE	  #70-->EXPLORE
+	  	0x43 255 #SETTINGS
+	  	0x54 120 #FAST_FORWARD
+	  	0x55 121 #REWIND
+	  	0x59 122 #PREV
+	  	0x58 123 #NEXT
+	  	0x4e 2   #1
+	  	0x0d 3   #2
+	  	0x0c 4   #3
+	  	0x4a 5   #4
+	  	0x09 6   #5
+	  	0x08 7   #6
+	  	0x46 8   #7
+	  	0x05 9   #8
+	  	0x04 10  #9
+	  	0x01 11  #0
+	  	0x42 14  #DEL
+#	  	0x52 128 #MEDIA_STOP
+#	  	0x45 264 #ONEKEY_ZOOM
+	  	0x06 265 #SHORTCUT_SUBTITLE
+	  	0x44 266 #KODI 
+	  	0x0f  233 #MAIN_MENU
+#	  	0x12 269  # F9
+		0x47 112  #@ AT
+        0x0a 111 #MUSIC
+		0x4d 101 # (F3)VIDEO
+		0x49 66  #(F1)PHOTO
+		0x48 77	#(F2)FILE
+		0x12 88   #(F9)CLEAN
+		0xf2 140  #F10 oritation 
+		0x4b 140  #F10 oritation
+		0x45 99  #(F6)ZOOM
+key_end

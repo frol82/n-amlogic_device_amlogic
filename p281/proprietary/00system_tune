@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+# create var/run in tmpfs
+mkdir /mnt/var 0666 root root
+mkdir /mnt/var/run 0666 root root

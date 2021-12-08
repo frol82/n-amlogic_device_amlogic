@@ -1,0 +1,7 @@
+#!/system/bin/sh
+# disable noisereduce
+echo 0 > /sys/module/di/parameters/nr2_en
+# disable Live TV freezing
+echo 1 > /sys/module/amvdec_h264/parameters/error_recovery_mode
+
+echo 2 > /sys/class/tv/policy_fr_auto
